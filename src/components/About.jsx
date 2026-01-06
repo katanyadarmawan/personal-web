@@ -103,7 +103,7 @@ export const About = () => {
 
           {/* Image */}
           <img
-            src="./src/assets/rizky-clean.png"
+            src="/rizky-clean.png"
             alt=""
             className="relative z-10 w-full h-full object-cover rounded-tl-lg rounded-br-lg"
           />
