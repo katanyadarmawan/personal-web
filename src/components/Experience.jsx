@@ -23,7 +23,6 @@ export const Experience = () => {
             start: "top 60%",
             toggleActions: "play none none reverse",
             scrub: true,
-            markers: true,
           },
         },
       );
