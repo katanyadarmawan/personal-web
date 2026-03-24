@@ -47,7 +47,7 @@ export const Projects = () => {
       // github: "https://github.com/example/dashboard",
     },
     {
-      title: "Alfagift Partner Chat Agent (ALPACA)",
+      title: "Alfagift Partner Hub",
       tech: ["JavaScript", "Nuxt.js", "Vuetify", "Tailwind", "Vite"],
       description:
         "A real-time chat application for Alfagift official store partners.",

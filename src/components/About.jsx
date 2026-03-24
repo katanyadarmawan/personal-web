@@ -71,28 +71,29 @@ export const About = () => {
   return (
     <section
       ref={aboutSection}
-      className="h-[800px] w-full justify-center items-center mt-2 flex flex-col sm:flex-row text-start gap-5 px-4 sm:px-10"
+      className="min-h-screen w-full flex flex-col sm:flex-row items-center justify-center gap-8 px-4 sm:px-10 py-10"
     >
       <div
         ref={leftContent}
-        className="content-left flex flex-col justify-center basis-full sm:basis-1/2 p-4 sm:p-6"
+        className="flex flex-col justify-center basis-full sm:basis-1/2"
       >
-        <div className="text-2xl font-bold mb-3">About Me</div>
-        <div className="text-[1rem] text-justify leading-snug tracking-tight">
+        <div className="text-2xl font-bold mb-3 text-center sm:text-left">
+          About Me
+        </div>
+        <div className="text-[0.95rem] sm:text-[1rem] text-justify leading-relaxed sm:leading-snug tracking-tight">
           {about}
         </div>
       </div>
 
       <div
         ref={rigtContent}
-        className="basis-full sm:basis-1/2 flex justify-center items-center p-4 sm:p-6 overflow-hidden"
+        className="basis-full sm:basis-1/2 flex justify-center items-center overflow-hidden"
       >
-        <div className="relative w-[400px] h-[600px]">
-          {/* SVG background */}
+        <div className="relative w-[260px] h-[360px] sm:w-[400px] sm:h-[600px]">
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute w-[620px] h-[620px] -top-30 -left-40 z-0"
+            className="absolute w-[420px] h-[420px] sm:w-[620px] sm:h-[620px] -top-20 sm:-top-30 -left-20 sm:-left-40 z-0"
           >
             <path
               fill="#B4B4B4"
@@ -101,11 +102,10 @@ export const About = () => {
             />
           </svg>
 
-          {/* Image */}
           <img
             src="/rizky-clean.png"
             alt=""
-            className="relative z-10 w-full h-full object-cover rounded-tl-lg rounded-br-lg"
+            className="relative z-10 w-full h-full object-cover rounded-xl"
           />
         </div>
       </div>

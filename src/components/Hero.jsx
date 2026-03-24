@@ -27,7 +27,7 @@ export const Hero = () => {
     gsap.fromTo(
       download.current,
       { opacity: 0, y: -200 },
-      { opacity: 1, y: 0, duration: 3, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 3, ease: "power3.out" },
     );
 
     const split1 = SplitText.create(heroHeader.current, {
@@ -72,7 +72,7 @@ export const Hero = () => {
           duration: 1.5,
           ease: "power2.out",
         },
-        "-=1.2"
+        "-=1.2",
       );
 
       tl.to(
@@ -84,7 +84,7 @@ export const Hero = () => {
           duration: 1.5,
           ease: "power2.out",
         },
-        "-=1.5"
+        "-=1.5",
       );
     });
 
@@ -111,13 +111,13 @@ export const Hero = () => {
               href="/cv-rizky-darmawan-2026.pdf"
               download
               className="
-    inline-flex items-center gap-2 animate-bounce
-    px-6 py-3
-    bg-gray-900 text-white text-sm font-medium
-    rounded-lg
-    hover:bg-gray-700
-    transition
-  "
+                inline-flex items-center gap-2 animate-bounce
+                px-6 py-3
+                bg-gray-900 text-white text-sm font-medium
+                rounded-lg
+                hover:bg-gray-700
+                transition
+              "
             >
               Download CV
             </a>
