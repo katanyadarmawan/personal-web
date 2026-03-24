@@ -20,13 +20,13 @@ export const Projects = () => {
           stagger: 0.2,
           scrollTrigger: {
             trigger: projectsSection.current,
-            start: "10% 75%",
-            // toggleActions: "play none none reverse",
+            start: "start 60%",
+            toggleActions: "play none none reverse",
           },
-        }
+        },
       );
     },
-    { scope: projectsSection }
+    { scope: projectsSection },
   );
 
   const projects = [

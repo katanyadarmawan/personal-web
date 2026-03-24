@@ -26,9 +26,9 @@ export const About = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: aboutSection.current,
-          start: "20% 75%",
+          start: "start 60%",
           end: "bottom top", // penting: benar-benar selesai saat section lewat
-          scrub: 1.5,
+          scrub: 1,
           toggleActions: "play none none reverse",
 
           // markers: true,

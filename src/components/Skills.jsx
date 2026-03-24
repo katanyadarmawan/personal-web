@@ -46,7 +46,7 @@ export const Skills = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: languages.current,
-          start: "start 75%",
+          start: "start 60%",
           toggleActions: "play none none reverse",
         },
       });
@@ -59,7 +59,7 @@ export const Skills = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: frameworks.current,
-          start: "start 75%",
+          start: "start 60%",
           toggleActions: "play none none reverse",
         },
       });
@@ -72,12 +72,13 @@ export const Skills = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: tools.current,
-          start: "start 75%",
+          start: "start 60%",
           toggleActions: "play none none reverse",
+          scrub: true,
         },
       });
     },
-    { scope: skillsSection }
+    { scope: skillsSection },
   );
 
   const groupClass =

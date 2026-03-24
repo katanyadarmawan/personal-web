@@ -17,15 +17,18 @@ export const Experience = () => {
           duration: 0.6,
           ease: "power3.out",
           stagger: 0.2,
+
           scrollTrigger: {
             trigger: experienceSection.current,
-            start: "center 75%",
+            start: "top 60%",
             toggleActions: "play none none reverse",
+            scrub: true,
+            markers: true,
           },
-        }
+        },
       );
     },
-    { scope: experienceSection }
+    { scope: experienceSection },
   );
   const experiences = [
     {
